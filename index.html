@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="workExperience.html">Work Experience</a>
+        </div>
+
+        
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          BENJAMIN BUSLER
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          
+          <div class="portfolio-img-background" style="background-image:url(images/UFO.jpg)"></div> <!-- background image-->
+          
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/rocket.png.crdownload" alt="">
+            </div>
+
+            <div class="subtitle">Freshman Engineering Clinic Commerical Design Project</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/miataPhoto.jpg)"></div> <!-- background image-->
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/" alt="">
+            </div>
+
+            <div class="subtitle">My 1993 Mazda Miata Project Car</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/ionenginecad.jpg)"></div> <!-- background image-->
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/ongoing project.gif" alt="">
+            </div>
+
+            <div class="subtitle">Home made Ion Engine</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/finalProject.jpg)"></div> <!-- background image-->
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/" alt="">
+            </div>
+
+            <div class="subtitle">AP Physics Final Project</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/openCV.jpg)"></div> <!-- background image-->
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/ongoing project.gif" alt="">
+            </div>
+
+            <div class="subtitle">Learning Facial Recognition and other Image Processing with openCV</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/serverRack.jpg)"></div> <!-- background image-->
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/" alt="">
+            </div>
+
+            <div class="subtitle">The Custom Server Rack this Website and Many other Projects are Hosted on</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/photo-1560762484-813fc97650a0.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/dogecoin.webp" alt="">
+            </div>
+
+            <div class="subtitle">Awoooga</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/photo-1589652717521-10c0d092dea9.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/dogecoin.webp" alt="">
+            </div>
+
+            <div class="subtitle">Bababooey</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/photo-1612831818835-04968d0746fa.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/dogecoin.webp" alt="">
+            </div>
+
+            <div class="subtitle">Kinda Sus tho</div>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
